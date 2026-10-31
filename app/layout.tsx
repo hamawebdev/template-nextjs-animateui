@@ -1,13 +1,22 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Rubik, Poppins } from "next/font/google";
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 
-const inter = Inter({ subsets: ['latin'] });
+const fontSans = Rubik({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
+
+const fontSerif = Poppins({
+  subsets: ["latin"],
+  variable: "--font-serif",
+});
+
 
 export const metadata: Metadata = {
-  title: 'devsForFun opensource frontend template',
-  description: 'devsForFun opensource frontend template',
+  title: 'eden agency dz',
+  description: 'eden agency dz',
   icons: [
     {
       url: '/favicon.ico',
@@ -49,7 +58,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className}`}>
+          <body className={`${fontSans.variable} ${fontSerif.variable} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>

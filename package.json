@@ -1,9 +1,9 @@
 {
-  "name": "devsforfun-frontend-template",
-  "description": "devsForFun opensource frontend template",
-  "author": "devsForFun",
-  "email": "charan@devsforfun.com",
-  "website": "https://devsforfun.com",
+  "name": "eden agency",
+  "description": "eden agency dz website",
+  "author": "eden agency",
+  "email": "edenagencydz@gmail.com",
+  "website": "https://edenagencydz.cloud",
   "version": "0.1.0",
   "private": true,
   "scripts": {
